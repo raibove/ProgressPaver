@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 
 const Landing = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col h-screen bg-[#F5F7FB]">
       <Header />
@@ -12,7 +15,10 @@ const Landing = () => {
           <p className="pt-10 text-[#35374E] leading-normal text-lg sm:text-3xl">
             Sign up now and start tracking your goals with <b>ProgressPaver</b>.
           </p>
-          <button className="bg-[#69A1AC] my-10 text-white text-lg md:text-2xl p-2 md:px-8 md:py-3 rounded-md">
+          <button
+            className="bg-[#69A1AC] my-10 text-white text-lg md:text-2xl p-2 md:px-8 md:py-3 rounded-md"
+            onClick={() => navigate("/dashboard")}
+          >
             Sign Up
           </button>
         </div>

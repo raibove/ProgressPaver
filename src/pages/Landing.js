@@ -2,7 +2,7 @@ import Header from "../components/Header";
 
 const Landing = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen bg-[#F5F7FB]">
       <Header />
       <div className="flex flex-row grow bg-[url('/public/LandingPage.svg')] bg-contain bg-no-repeat bg-right">
         <div className="my-20 mx-5 md:m-20 lg:w-1/2">
